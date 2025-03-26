@@ -22,36 +22,36 @@
         <p>You <em>know</em> you want to.</p>
 
         <div class="sign-up-container">
-            <h3>Let's do this!</h3>
+            <p>Let's do this!</p>
             <form id="myform" action="" method="post">
                 <div class="form-first-name">
                     <label for="first-name">FIRST NAME</label>
-                    <input type="text" name="first-name" id="first-name">
+                    <input type="text" name="first-name" id="first-name" required>
                 </div>
 
                 <div class="form-last-name">
                     <label for="last-name">LAST NAME</label>
-                    <input type="text" name="last-name" id="last-name">
+                    <input type="text" name="last-name" id="last-name" required>
                 </div>
 
                 <div class="form-email">
                     <label for="email">EMAIL</label>
-                    <input type="email" name="email" id="email">
+                    <input type="email" name="email" id="email" required>
                 </div>
 
                 <div class="form-phone-number">
                     <label for="phone-number">PHONE NUMBER</label>
-                    <input type="tel" name="phone-number" id="phone-number">
+                    <input type="tel" name="phone-number" id="phone-number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
                 </div>
 
                 <div class="form-password">
                     <label for="password">PASSWORD</label>
-                    <input type="text" name="password" id="password">
+                    <input type="password" name="password" id="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
                 </div>
 
                 <div class="form-confirm-password">
                     <label for="confirm-password">CONFIRM PASSWORD</label>
-                    <input type="text" name="password" id="password">
+                    <input type="password" name="password" id="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
                 </div>
             </form>
         </div>

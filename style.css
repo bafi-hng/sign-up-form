@@ -90,6 +90,11 @@ img {
     padding-bottom: 32px;
 }
 
+.sign-up-container > p {
+    font-size: 24px;
+    font-weight: 600;
+}
+
 form {
     display: flex;
     flex-flow: row wrap;
@@ -101,4 +106,25 @@ form > div {
     display: flex;
     flex-flow: column wrap;
     width: 250px;
+}
+
+form label {
+    color: #5b5c5d;
+}
+
+
+form input {
+    margin-top: 4px;
+    border: 1px solid #E5E7EB;
+    border-radius: 4px;
+    height: 24px;
+}
+
+form input[type="password"]:invalid {
+    border: 2px solid rgb(209, 29, 29);
+}
+
+
+form input:focus {
+    box-shadow: 1.4px 2.7px 2.7px hsl(0deg 0% 0% / 0.46);
 }
