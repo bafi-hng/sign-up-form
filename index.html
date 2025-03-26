@@ -7,60 +7,53 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="left-side">
-        <img src="images/polina-kuzovkova-n88u01vt9rs-unsplash.jpg" alt="Scandinavian Coast">
-        <div class="banner">
-            <img class="logo" src="images/odin-lined.png" alt="Odin Logo">
-            <h1 class="title">Odin</h1>
+    <div class="main">
+        <div class="left-side">
+            <img src="images/polina-kuzovkova-n88u01vt9rs-unsplash.jpg" alt="Scandinavian Coast">
+            <div class="banner">
+                <img class="logo" src="images/odin-lined.png" alt="Odin Logo">
+                <h1 class="title">Odin</h1>
+            </div>
+            <p class="credit">Photo by Polina Kuzovkova on Unsplash </p>
         </div>
-        <p class="credit">Photo by Polina Kuzovkova on Unsplash </p>
-    </div>
-
-    <div class="right-side">
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae iste soluta sapiente alias ipsum omnis beatae impedit ullam esse. Maxime neque assumenda minus nulla a consequuntur ipsa optio accusamus commodi.
-        </p>
-        <p>You <em>know</em> you want to.</p>
-
-        <div class="sign-up-container">
-            <p>Let's do this!</p>
-            <form id="myform" action="" method="post">
-                <div class="form-first-name">
-                    <label for="first-name">FIRST NAME</label>
-                    <input type="text" name="first-name" id="first-name" required>
-                </div>
-
-                <div class="form-last-name">
-                    <label for="last-name">LAST NAME</label>
-                    <input type="text" name="last-name" id="last-name" required>
-                </div>
-
-                <div class="form-email">
-                    <label for="email">EMAIL</label>
-                    <input type="email" name="email" id="email" required>
-                </div>
-
-                <div class="form-phone-number">
-                    <label for="phone-number">PHONE NUMBER</label>
-                    <input type="tel" name="phone-number" id="phone-number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
-                </div>
-
-                <div class="form-password">
-                    <label for="password">PASSWORD</label>
-                    <input type="password" name="password" id="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
-                </div>
-
-                <div class="form-confirm-password">
-                    <label for="confirm-password">CONFIRM PASSWORD</label>
-                    <input type="password" name="password" id="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
-                </div>
-            </form>
+        <div class="right-side">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae iste soluta sapiente alias ipsum omnis beatae impedit ullam esse. Maxime neque assumenda minus nulla a consequuntur ipsa optio accusamus commodi.
+            </p>
+            <p>You <em>know</em> you want to.</p>
+            <div class="sign-up-container">
+                <p>Let's do this!</p>
+                <form id="myform" action="" method="post">
+                    <div class="form-first-name">
+                        <label for="first-name">FIRST NAME</label>
+                        <input type="text" name="first-name" id="first-name" required>
+                    </div>
+                    <div class="form-last-name">
+                        <label for="last-name">LAST NAME</label>
+                        <input type="text" name="last-name" id="last-name" required>
+                    </div>
+                    <div class="form-email">
+                        <label for="email">EMAIL</label>
+                        <input type="email" name="email" id="email" required>
+                    </div>
+                    <div class="form-phone-number">
+                        <label for="phone-number">PHONE NUMBER</label>
+                        <input type="tel" name="phone-number" id="phone-number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                    </div>
+                    <div class="form-password">
+                        <label for="password">PASSWORD</label>
+                        <input type="password" name="password" id="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
+                    </div>
+                    <div class="form-confirm-password">
+                        <label for="confirm-password">CONFIRM PASSWORD</label>
+                        <input type="password" name="password" id="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
+                    </div>
+                </form>
+            </div>
+            <div>
+                <button type="submit" form="myform">Create Account</button>
+            </div>
+            <p class="log-in">Already have an account? <a href="#">Log in</a></p>
         </div>
-
-        <div>
-            <button type="submit" form="myform">Create Account</button>
-        </div>
-
-        <p class="log-in">Already have an account? <a href="#">Log in</a></p>
     </div>
 </body>
 </html>
