@@ -141,3 +141,14 @@ button {
     border-radius: 8px;
     box-shadow: 1.4px 2.7px 2.7px hsl(0deg 0% 0% / 0.46)
 }
+
+p.log-in {
+    font-size: initial;
+    font-weight: initial;
+    margin-top: 32px;
+}
+
+p > a {
+    color: rgb(99, 91, 76);
+    font-weight: 600;
+}
