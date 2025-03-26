@@ -1,8 +1,17 @@
 @font-face {
     font-family: "Norse";
-    src: url(fonts/Norse-Bold.otf);
+    src: url(fonts/Norse-Bold.woff2);
 }
 
+@font-face {
+    font-family: "Aptos";
+    src: url(fonts/Aptos.woff2);
+}
+
+:root {
+    --right-side-padding-left: 64px;
+    --right-side-padding-right: 128px;
+}
 
 body {
     margin: 0px;
@@ -11,6 +20,7 @@ body {
     flex-direction: row;
     height: 100vh;
     overflow: hidden;
+    font-family: "Aptos", Arial, Helvetica, sans-serif;
 }
 
 .left-side {
@@ -46,7 +56,7 @@ img {
 }
 
 .title {
-    font-family: "Norse";
+    font-family: "Norse", "Aptos", Arial, Helvetica, sans-serif;
     font-size: 4em;
 }
 
@@ -54,4 +64,23 @@ img {
     position: absolute;
     align-self: flex-end;
     background-color: rgba(0,0,0,0.4);
+}   
+
+
+.right-side {
+    background-color: rgb(244, 246, 247);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.right-side > p {
+    font-size: 20px;
+    font-weight: 600;
+    padding-left: var(--right-side-padding-left);
+    padding-right: var(--right-side-padding-right);
+}
+
+.sign-up-container {
+    background-color: white;
 }
